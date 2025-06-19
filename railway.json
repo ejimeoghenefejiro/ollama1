@@ -1,0 +1,14 @@
+{
+  "build": {
+    "dockerfilePath": "Dockerfile"
+  },
+  "deploy": {
+    "startCommand": "ollama serve",
+    "restartPolicyType": "ALWAYS"
+  },
+  "experimental": {
+    "expose": {
+      "ports": [11434]
+    }
+  }
+}
