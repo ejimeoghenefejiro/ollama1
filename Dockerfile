@@ -8,4 +8,4 @@ RUN apt-get update && apt-get install -y curl && \
 EXPOSE 11434
 
 # Start Ollama server
-CMD ["ollama", "serve"]
+CMD ["/usr/local/bin/ollama", "serve"]
